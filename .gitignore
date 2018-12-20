@@ -1,0 +1,6 @@
+1
+.DS_Store
+*.swp
+build
+composer.lock
+vendor
