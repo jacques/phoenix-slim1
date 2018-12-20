@@ -13,6 +13,7 @@
         "monolog/monolog": "^1.23",
         "moontoast/math": "^1.1",
         "ramsey/uuid": "^3.8",
+        "slim/slim": "^1.6",
         "smarty/smarty": "^3.1",
         "swiftmailer/swiftmailer": "^6.1",
         "vlucas/valitron": "^1.4",
