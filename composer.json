@@ -17,7 +17,7 @@
         "smarty/smarty": "^3.1",
         "swiftmailer/swiftmailer": "^6.1",
         "vlucas/valitron": "^1.4",
-        "wikimedia/ip-set": "^1.2"
+        "wikimedia/ip-set": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.8",
