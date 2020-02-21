@@ -62,7 +62,7 @@ class Date
         }
 
         $months = array_reverse($months);
-        while (sizeof($months) > 3) {
+        while (sizeof($months) > $max) {
             array_pop($months);
         }
         return $months;
