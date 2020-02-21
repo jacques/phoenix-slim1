@@ -39,4 +39,32 @@ class Date
 
         return $the_date;
     }
+
+    /**
+     * Return a list of months from a start date returning the last x months.
+     *
+     * @param string $start_date
+     * @param int    $max
+     *
+     * @return array
+     */
+    public static function monthsFromDate(string $start_date, int $max)
+    {
+        $months = [];
+
+        $start = Carbon::createFromFormat('Y-m-d H:i:s', $start_date);
+        $end = Carbon::now()->endOfMonth();
+
+        $date = $start->copy();
+        while (!$date->gte($end)) {
+            $months[] = ['month_name' => $date->format('F Y'), 'month_yyyymm' => $date->format('Y-m')];
+            $date->addMonth();
+        }
+
+        $months = array_reverse($months);
+        while (sizeof($months) > 3) {
+            array_pop($months);
+        }
+        return $months;
+    }
 }
