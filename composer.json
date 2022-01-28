@@ -1,13 +1,13 @@
 {
     "name": "jacques/phoenix-slim1",
     "description": "Shims for migrating to Slim 3.x from Slim 1.x and 2.x",
-    "config": {
-        "optimize-autoloader": true,
-        "sort-packages": true,
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "Jacques Marneweck",
+            "email": "jacques@siberia.co.za"
         }
-    },
+    ],
     "require": {
         "php": ">=7.0.0",
         "brick/math": "^0.9.3",
@@ -37,13 +37,13 @@
             "Jacques\\Phoenix\\": "src/"
         }
     },
-    "license": "MPL-2.0",
-    "authors": [
-        {
-            "name": "Jacques Marneweck",
-            "email": "jacques@siberia.co.za"
-        }
-    ],
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
     "scripts": {
         "test": "vendor/bin/phpunit --colors --debug --configuration=tests/phpunit.xml --coverage-clover build/logs/clover.xml --coverage-text"
     }
