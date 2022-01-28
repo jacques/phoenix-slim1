@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 /**
  * @author    Jacques Marneweck <jacques@siberia.co.za>
- * @copyright 2018-2019 Jacques Marneweck.  All rights strictly reserved.
+ * @copyright 2018-2022 Jacques Marneweck.  All rights strictly reserved.
  */
 
 namespace Jacques\Phoenix;
 
 use Carbon\Carbon;
 
-class Date
+final class Date
 {
     /**
      * If we expect a minimum date when a column is set to 0000-00-00 00:00:00 we
@@ -48,7 +48,7 @@ class Date
      *
      * @return array
      */
-    public static function monthsFromDate(string $start_date, int $max)
+    public static function monthsFromDate(string $start_date, int $max): array
     {
         $months = [];
 
