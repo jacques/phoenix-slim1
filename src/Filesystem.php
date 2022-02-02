@@ -29,23 +29,9 @@
  * @package   Phoenix
  */
 
-namespace Jacques\Phoenix\HTTP;
+namespace Jacques\Phoenix;
 
-use Jacques\Phoenix\Filesystem;
-
-final class UploadFile
+class Filesystem
 {
-    /**
-     * Check if we have files uploaded as part of the HTTP request.
-     *
-     * @var bool
-     */
-    public static function hasUploadedFiles(): bool
-    {
-        if (sizeof($_FILES['files']['name']) > 0 && $_FILES['files']['name']['0'] !== '') {
-            return true;
-        }
 
-        return false;
-    }
 }
