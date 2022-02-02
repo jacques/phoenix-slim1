@@ -11,9 +11,9 @@
     "require": {
         "php": ">=7.0.0",
         "brick/math": "^0.9.3",
-        "illuminate/database": "^5.8",
-        "illuminate/events": "^5.8",
-        "illuminate/pagination": "^5.8",
+        "illuminate/database": "^8.82",
+        "illuminate/events": "^8.82",
+        "illuminate/pagination": "^8.82",
         "monolog/monolog": "^1.24 || ^2.3",
         "ramsey/uuid": "^4.2",
         "slim/slim": "^1.6",
