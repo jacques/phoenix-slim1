@@ -11,25 +11,25 @@
     "require": {
         "php": "^8.0",
         "brick/math": "^0.10.2",
-        "illuminate/database": "^10.4",
-        "illuminate/events": "^10.4",
-        "illuminate/pagination": "^10.4",
-        "monolog/monolog": "^3.3",
+        "illuminate/database": "^10.48",
+        "illuminate/events": "^10.48",
+        "illuminate/pagination": "^10.48",
+        "monolog/monolog": "^3.6",
         "ramsey/uuid": "^4.7",
         "slim/slim": "^1.6",
-        "smarty/smarty": "^4.2",
-        "symfony/mailer": "^6.2",
+        "smarty/smarty": "^4.5.3",
+        "symfony/mailer": "^6.4",
         "vlucas/valitron": "^1.4",
         "wikimedia/ip-set": "^3.1"
     },
     "require-dev": {
-        "brick/varexporter": "^0.3.8",
-        "ergebnis/composer-normalize": "^2.30",
+        "brick/varexporter": "^0.4.0",
+        "ergebnis/composer-normalize": "^2.42",
         "phpunit/php-invoker": "^4.0",
-        "phpunit/phpunit": "^10.0",
-        "rector/rector": "^0.15.23",
-        "squizlabs/php_codesniffer": "^3.7",
-        "vimeo/psalm": "^5.8"
+        "phpunit/phpunit": "^10.5",
+        "rector/rector": "^1.0",
+        "squizlabs/php_codesniffer": "^3.10",
+        "vimeo/psalm": "^5.24"
     },
     "autoload": {
         "psr-4": {
